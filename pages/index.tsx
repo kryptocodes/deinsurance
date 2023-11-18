@@ -1,24 +1,23 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import React, { useEffect } from 'react'
+import { useAccount } from 'wagmi';
 
-const inter = Inter({ subsets: ['latin'] })
+interface indexProps {
 
-export default function Home() {
-  return (
-    <div className="flex flex-col py-2 px-2">
-    <h1
-      className='text-6xl font-bold text-gray-900
-        underline py-2
-      '
-    >
-      DESURANCE
-    </h1>
-
-    <p className="text-2xl font-bold text-gray-900">
-      Provide Job insurance for all Startup workers across
-      <br/>
-       the world while keeping their data anonymous.
-    </p>
-    </div>
-  )
 }
+
+const Index: React.FC<indexProps> = ({}) => {
+        const { isConnected, address } = useAccount();
+        useEffect(() => {
+            if(!isConnected || !address) {
+                window.location.href = '/connect'
+            }
+        }, [isConnected, address])
+
+        return (
+            <>
+            
+            </>
+        );
+}
+
+export default Index
