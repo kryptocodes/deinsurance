@@ -3,6 +3,7 @@ import { useAccount } from 'wagmi';
 
 import { GenerateProof } from '@reclaimprotocol/reclaim-connect-react';
 import { v4 as uuidv4 } from 'uuid';
+import { Button } from '@/components/ui/button';
 
 
 interface indexProps {
