@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useAccount } from 'wagmi';
 
 import { GenerateProof } from '@reclaimprotocol/reclaim-connect-react';
+import { randomUUID } from 'crypto';
 
 
 interface indexProps {
@@ -54,7 +55,7 @@ const Index: React.FC<indexProps> = ({}) => {
 
                     <GenerateProof
       appID='e454f7f1-7d6e-4885-a894-aac999580d8a'
-      userID='dasq2easdase-asdq2e3'
+      userID={randomUUID()}
       onProofSubmission={(proofs, sessionId) => {
             alert('success')
 
