@@ -54,7 +54,7 @@ const Index: React.FC<indexProps> = ({}) => {
                 </h1>
 
                     <GenerateProof
-      appID='e454f7f1-7d6e-4885-a894-aac999580d8a'
+      appID='1f85035d-2d2e-4c3f-800e-6a6445fa0f78'
       userID={uuidv4()}
       onProofSubmission={(proofs, sessionId) => {
             alert('success')
