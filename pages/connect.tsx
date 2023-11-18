@@ -13,9 +13,9 @@ export default function Home() {
   const { isConnected, address } = useAccount();
 
   useEffect(() => {
-    // if(isConnected && address) {
-    //    API(address)
-    // }
+    if(isConnected && address) {
+       API(address)
+    }
   }, [isConnected, address])
 
   const API = async (wallet:string) => {
