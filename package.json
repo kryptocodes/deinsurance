@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "@reclaimprotocol/reclaim-client-sdk": "^0.0.11",
     "@reclaimprotocol/reclaim-connect-react": "^0.0.1-beta.12",
     "@web3modal/ethereum": "^2.7.1",
