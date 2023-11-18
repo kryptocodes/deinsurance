@@ -56,7 +56,7 @@ const Index: React.FC<indexProps> = ({}) => {
       appID='55e3f565-93c9-4cbb-9c03-aee810199ce7'
       userID='dasq2easdase-asdq2e3'
       onProofSubmission={(proofs, sessionId) => {
-            console.log(proofs)
+            alert('success')
 
       }}
       onProofSubmissionFailed={() => {
